@@ -1,48 +1,50 @@
-# Model Template
+# Deep Contrast
 
-Template repository as base to create a new model that can be plugged into modelhub.ai.
+Deep learning model to automatically classify contrast enhanced and non-contrast enhanced CT scans.
 
+Run this model in [Google CoLab](https://colab.research.google.com/drive/1-mmKFqLojlgsmvfeLUT-oU0hOKyhOTLS?usp=sharing).
 
-## How to use this template to contribute your model to modelhub.ai
+## meta
 
-Fork this repository and rename it. Choose a name that apropriately describes your model in a conciese way.
+|                  |                               |
+| ---------------- |-------------------------------|
+| id               | 0000                          |
+| application_area | EfficientNetB4                |
+| task             | Classification                |
+| task_extended    | EfficientNetB4 classification |
+| data_type        | Image/CT scan                 |
+| data_source      | http://www.image-net.org/     |
 
-Fill in the template files and folders with your code, model, and sample data.
+## publication
 
-To publish your model with modelhub.ai, clone https://github.com/modelhub-ai/modelhub, add your model to the model index list "models.json", and create a pull request. If your model passes our basic tests, we will accept the pull requst and your model will be available via modelhub.ai.
+|                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| -------------- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| title          | Deep Learning–based Detection of Intravenous Contrast Enhancement on CT Scans                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| source         | Radiology: Artificial Intelligence                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| url | https://doi.org/10.1148/ryai.210285                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| year           | 2022                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| authors        | Ye, Z., Qian, J.M., Hosny, A., Zeleznik, R., Plana, D., Likitlersuang, J., Zhang, Z., Mak, R.H., Aerts, H.J. and Kann, B.H.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| abstract       | Identifying the presence of intravenous contrast material on CT scans is an important component of data curation for medical imaging–based artificial intelligence model development and deployment. Use of intravenous contrast material is often poorly documented in imaging metadata, necessitating impractical manual annotation by clinician experts. Authors developed a convolutional neural network (CNN)–based deep learning platform to identify intravenous contrast enhancement on CT scans. For model development and validation, authors used six independent datasets of head and neck (HN) and chest CT scans, totaling 133 480 axial two-dimensional sections from 1979 scans, which were manually annotated by clinical experts. Five CNN models were trained first on HN scans for contrast enhancement detection. Model performances were evaluated at the patient level on a holdout set and external test set. Models were then fine-tuned on chest CT data and externally validated. This study found that Digital Imaging and Communications in Medicine metadata tags for intravenous contrast material were missing or erroneous for 1496 scans (75.6%). An EfficientNetB4-based model showed the best performance, with areas under the curve (AUCs) of 0.996 and 1.0 in HN holdout (n = 216) and external (n = 595) sets, respectively, and AUCs of 1.0 and 0.980 in the chest holdout (n = 53) and external (n = 402) sets, respectively. This automated, scan-to-prediction platform is highly accurate at CT contrast enhancement detection and may be helpful for artificial intelligence model development and clinical application. |
+| google_scholar | https://scholar.google.com/scholar?cites=4993190987271886763&as_sdt=40000005&sciodt=0,22&hl=en|
+| bibtex         | @article{ye2022deep, title={Deep Learning--based Detection of Intravenous Contrast Enhancement on CT Scans}, author={Ye, Zezhong and Qian, Jack M and Hosny, Ahmed and Zeleznik, Roman and Plana, Deborah and Likitlersuang, Jirapat and Zhang, Zhongyi and Mak, Raymond H and Aerts, Hugo JWL and Kann, Benjamin H}, journal={Radiology: Artificial Intelligence}, volume={4}, number={3}, pages={e210285}, year={2022}, publisher={Radiological Society of North America}}|
 
-For a more detailed guide on how to contribute your model to modelhub, see [Contribute Your Own Model to Modelhub](http://modelhub.readthedocs.io/en/latest/contribute.html) in the offical [Modelhub Documentation](http://modelhub.readthedocs.io).
+## model
 
+|               |                                                               |
+| ------------- |---------------------------------------------------------------|
+| description   | EfficientNetB4                                                |
+| provenance    | Conrtibuted by author                                         |
+| architecture  | Convolutional Neural Network (CNN)                            |
+| learning_type | Supervised learning                                           |
+| format        | .h5                                                           |
+| I/O           | model I/O can be viewed [here](contrib_src/model/config.json) |
+| license       | model license can be viewed [here](contrib_src/license/model) |
 
-## License
+## run
 
-We release the code of this model-template repository (https://github.com/modelhub-ai/model-template) under the UNLICENSE (see full text below). We do this so you can fork and use this template as basis for your own models, and release them under any license you want, without restrictions and without even giving credit to modelhub.ai (we're happy if you do so anyway, of course). To be clear: You can completely remove the UNLICENSE from your fork/copy of this repository and instead add any license you like!
+To run this model and view others in the collection, view the instructions on [ModelHub](http://app.modelhub.ai/).
 
-After you forked (and renamed) this repository we advice you to immediately delete the README.md file (or at least any text herein regarding licensing - you don't want the UNLICENSE to lurk around when you are intending to release your model under a different license). Then add the licence you want to use for your models into the "contrib_src/license/model" file. Also add the license and copyright notice for your sample data to the "contrib_src/license/samples" file. If you want to add the model to the modelhub.ai model collection, you of course have to make sure, that your license allows modelhub.ai to use your model.
+## contribute
 
-### The UNLICENSE for the model-template repository (https://github.com/modelhub-ai/model-template):
+To contribute models, visit the [ModelHub docs](https://modelhub.readthedocs.io/en/latest/).
 
-This is free and unencumbered software released into the public domain.
-
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
-
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
-
-For more information, please refer to <http://unlicense.org>
