@@ -6,14 +6,14 @@ Run this model in [Google CoLab](https://colab.research.google.com/drive/1-mmKFq
 
 ## meta
 
-|                  |                               |
-| ---------------- |-------------------------------|
-| id               | 0000                          |
-| application_area | EfficientNetB4                |
-| task             | Classification                |
-| task_extended    | EfficientNetB4 classification |
-| data_type        | Image/CT scan                 |
-| data_source      | http://www.image-net.org/     |
+|                  |                                      |
+| ---------------- |--------------------------------------|
+| id               | 8409d87f-4771-4388-93aa-fa7b9954de98 |
+| application_area | EfficientNetB4                       |
+| task             | Classification                       |
+| task_extended    | EfficientNetB4 classification        |
+| data_type        | Image/CT scan                        |
+| data_source      | http://www.image-net.org/            |
 
 ## publication
 
