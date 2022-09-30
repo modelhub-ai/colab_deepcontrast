@@ -1,7 +1,7 @@
 {
   "id": "8409d87f-4771-4388-93aa-fa7b9954de98",
   "meta": {
-    "name": "DeepContrast",
+    "name": "colab_deepcontrast",
     "application_area": "Google CoLab",
     "task": "Classification",
     "task_extended": "Contrast detection - Google CoLab Notebook - Classification",
