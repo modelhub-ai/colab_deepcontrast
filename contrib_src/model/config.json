@@ -6,7 +6,8 @@
     "task": "Classification",
     "task_extended": "Contrast detection - Google CoLab Notebook - Classification",
     "data_type": "Image/CT scan",
-    "data_source": "Private"
+    "data_source": "Private",
+    "framework": "colab"
   },
   "publication": {
     "title": "Deep Learning–based Detection of Intravenous Contrast Enhancement on CT Scans",
