@@ -8,7 +8,8 @@
     "data_type": "Image/CT scan",
     "data_source": "Private",
     "framework": "colab",
-    "colab_link": "https://colab.research.google.com/drive/1-mmKFqLojlgsmvfeLUT-oU0hOKyhOTLS?usp=sharing"
+    "colab_link": "https://colab.research.google.com/drive/1-mmKFqLojlgsmvfeLUT-oU0hOKyhOTLS?usp=sharing",
+    "github_link": "https://github.com/AIM-Harvard/DeepContrast"
   },
   "publication": {
     "title": "Deep Learning–based Detection of Intravenous Contrast Enhancement on CT Scans",
